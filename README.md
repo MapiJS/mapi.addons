@@ -7,4 +7,6 @@ Addons for MapiJS by isolated functions on require Module
 
 3) Just call! Like this:
 
-# myInstancedMap.theFunctionThatILike(args);
+> myInstancedMap.theFunctionThatILike(args);
+
+That's all, folks! ;)
