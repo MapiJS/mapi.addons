@@ -1,7 +1,7 @@
 // Depends of markerclusterer.js on your project
 require('markerClusterer');
 
-cluster: function (objectClass) {
+cluster: function (objectClass, options) {
 	var Mapi = this,
 		map = Mapi.map;
 
@@ -18,8 +18,8 @@ cluster: function (objectClass) {
 		}
 
 		var clusterer = new MarkerClusterer(map, objects, {
-			gridSize: 100,
-			maxZoom: 18
+			gridSize: options.gridSize || 100,
+			maxZoom: options.maxZoom || 20
 		});
 
 		this.addObject('cluster', 'clusterer', clusterer);
