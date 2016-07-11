@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 setGeoJsonEvents: function (ev) {
 	var Mapi = this,
 		map = Mapi.map;

@@ -1,4 +1,7 @@
-// Google Maps library: visualization
+/*
+	version: 1.0.0
+	Google Maps library: visualization
+*/
 heatmap: function (options) {
 	var Mapi = this,
 		map = Mapi.map;
@@ -41,16 +44,27 @@ heatmap: function (options) {
 	var heatmap = Mapi.objects.heatmap.heatmap;
 
 	var gradient = options.gradient || [
-			'rgba(255, 255, 0, 0)',
-			'rgba(255, 255, 0, 1)',
-			'rgba(255, 20, 10, 1)',
-			'rgba(255, 40, 30, 1)',
-			'rgba(255, 45, 35, 1)',
-			'rgba(255, 50, 45, 1)',
-			'rgba(255, 80, 45, 1)',
+			'rgba(255, 255, 255, 0)',
+			'rgba(255, 255, 0, 0.8)',
+
+			'rgba(255, 180, 0, 1)',
+			'rgba(255, 150, 0, 1)',
+			'rgba(255, 120, 0, 1)',
+
+			'rgba(255, 80, 0, 1)',
+			'rgba(255, 50, 0, 1)',
+			'rgba(255, 45, 0, 1)',
+			'rgba(255, 40, 0, 1)',
+			'rgba(255, 20, 0, 1)',
+			'rgba(255, 10, 0, 1)',
+
+			'rgba(255, 0, 0, 1)',
+			'rgba(240, 0, 0, 1)',
 			'rgba(230, 0, 0, 1)',
-			'rgba(250, 0, 0, 1)',
-			'rgba(255, 0, 0, 1)'
+			'rgba(215, 0, 0, 1)',
+			'rgba(200, 0, 0, 1)',
+			'rgba(190, 0, 0, 1)',
+			'rgba(180, 0, 0, 1)'
 		];
 
 	heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);

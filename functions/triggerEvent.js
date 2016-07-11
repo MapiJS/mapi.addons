@@ -1,5 +1,10 @@
-triggerEvent: function (obj, event) {
+/*
+	version: 1.0.0
+*/
+triggerEvent: function (obj, event, options) {
 	event = event || 'click';
 
-	new google.maps.event.trigger(obj, event);
+	options = options || {};
+
+	new google.maps.event.trigger(obj, event, options);
 }

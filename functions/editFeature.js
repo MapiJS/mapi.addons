@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 editFeature: function (objectClass, id) {
 	var Mapi = this,
 		map = Mapi.map;

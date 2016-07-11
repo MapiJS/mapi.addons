@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 transit: function () {
 	var Mapi = this,
 		map = Mapi.map;

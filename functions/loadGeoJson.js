@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 loadGeoJson: function (URL) {
 	var map = this.map,
 		Mapi = this;

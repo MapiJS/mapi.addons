@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 elevation: function (lat, lng, callback) {
 	var Mapi = this,
 		map = Mapi.map;

@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 infoWindow: function (marker, options) {
 	var Mapi = this,
 		map = Mapi.map;

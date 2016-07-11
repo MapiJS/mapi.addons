@@ -1,4 +1,7 @@
-// Depends of markerclusterer.js on your project
+/*
+	version: 1.0.0
+	Depends of markerclusterer.js on your project
+*/
 require('markerClusterer');
 
 cluster: function (objectClass, options) {
@@ -22,6 +25,10 @@ cluster: function (objectClass, options) {
 			maxZoom: options.maxZoom || 20
 		});
 
-		this.addObject('cluster', 'clusterer', clusterer);
+		this.addObject({
+			groupId: 'cluster',
+			id: 'clusterer',
+			object: clusterer
+		});
 	}
 }

@@ -1,3 +1,6 @@
+/*
+	version: 1.0.0
+*/
 showDrawingTools: function (options) {
 	options.place = options.place || 'TOP_CENTER';
 
