@@ -1,5 +1,5 @@
 /*
-	version: 1.0.0
+	version: 1.0.1
 	Google Maps library: visualization
 */
 heatmap: function (options) {
@@ -25,10 +25,6 @@ heatmap: function (options) {
 			points.push(new google.maps.LatLng(obj.position.lat(), obj.position.lng()));
 		}
 	});
-
-	if (points.length === 0) {
-		throw ('The group ID ' + options.groupId + ' have no objects inside');
-	}
 
 	// Source: https://developers.google.com/maps/documentation/javascript/examples/layer-heatmap?hl=pt-br
 
