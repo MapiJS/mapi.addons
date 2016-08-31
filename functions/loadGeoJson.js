@@ -1,5 +1,5 @@
 /*
-	version: 1.0.1
+	version: 1.0.2
 */
 loadGeoJson: function (args) {
 	var map = this.map,
@@ -23,7 +23,7 @@ loadGeoJson: function (args) {
 
 	function setGeoJson(obj) {
 		if (!obj.type) {
-			throw ('Yout GeoJson must have a Type node');
+			throw ('Your GeoJson must have a Type node');
 		}
 
 		var newObj = {};
@@ -32,7 +32,8 @@ loadGeoJson: function (args) {
 			newObj.type = 'FeatureCollection';
 			newObj.features = [];
 			newObj.features.push(obj);
-		} else {
+		}
+		else {
 			newObj = obj;
 		}
 
